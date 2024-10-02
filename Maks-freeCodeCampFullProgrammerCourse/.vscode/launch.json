@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "type": "pwa-msedge",
+            "type": "msedge",
             "name": "Launch Microsoft Edge",
             "request": "launch",
             "runtimeArgs": [
@@ -13,14 +13,14 @@
             }
         },
         {
-            "type": "pwa-msedge",
+            "type": "msedge",
             "name": "Launch Microsoft Edge in headless mode",
             "request": "launch",
             "runtimeArgs": [
                 "--headless",
                 "--remote-debugging-port=9222"
             ],
-            "url": "/Users/amakki/Documents/Coding-Design/GitHub/Java-App-folder-repo-master/index.html",
+            "url": "/Users/amakki/Documents/Coding-Design/GitHub/empty for Github clones/Maksportfolio/MaksPortfolio/Maks-freeCodeCampFullProgrammerCourse/index.html",
             "presentation": {
                 "hidden": true
             }
@@ -29,7 +29,7 @@
             "type": "vscode-edge-devtools.debug",
             "name": "Open Edge DevTools",
             "request": "attach",
-            "url": "/Users/amakki/Documents/Coding-Design/GitHub/Java-App-folder-repo-master/index.html",
+            "url": "/Users/amakki/Documents/Coding-Design/GitHub/empty for Github clones/Maksportfolio/MaksPortfolio/Maks-freeCodeCampFullProgrammerCourse/index.html",
             "presentation": {
                 "hidden": true
             }
