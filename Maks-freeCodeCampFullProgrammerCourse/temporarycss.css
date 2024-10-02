@@ -1,16 +1,18 @@
 /* Global styles */
 body {
     font-family: 'Helvetica Neue', sans-serif;
+    color:#563d7c;
+    font-size: larger;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    background: linear-gradient(to bottom right, #b7e031, #e9ecef);
   }
   
   /* Header styles */
   header {
     background: #343a40;
-    color: #fff;
-    padding: 1rem;
+    color: #e12c2c;
+    padding: 10rem;
     text-align: center;
   }
   
