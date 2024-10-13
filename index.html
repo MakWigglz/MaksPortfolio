@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maks Map Game on Python</title>
+    <style>
+        .request-now-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .schedule-later-button {
+            background-color: #3498DB;
+            color: rgb(222, 16, 16);
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: color(green);
+            cursor: pointer;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <button class="request-now-button" onclick="requestNow()">
+        Request Now
+    </button>
+    <button class="schedule-later-button" onclick="scheduleLater()">
+        Schedule Later
+    </button>
+    <script>
+        function requestNow() {
+            alert("Request Now Button Clicked");
+        }
+        function scheduleLater() {
+            alert("Schedule for later button clicked");
+        }
+    </script>
+    <h1>Hello and welcome to the adventure {{ name }}! We call it name for simplicity</h1>
+</body>
+</html>
