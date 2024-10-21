@@ -15,7 +15,12 @@ for (var i=0; i<this.array.length; i++)
     str += this.array[i].display() + " ";
         return str;
 };
-
+var myString3 = new myString3([
+  new Class("myString1", "myString2"),
+  new Class("myString4", "myString5"),
+  new Class("myString6", "myString7")
+  ]);
+ alert(myString3.display() ); 
 
 
 
