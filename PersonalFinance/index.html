@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Finance Application</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
         }
         th, td {
-            border: 1px solid black;
+            border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
         }
@@ -20,10 +29,43 @@
 <body>
     <h1>Personal Finance Application</h1>
     <form action="/submit" method="post">
-        <label for="income">Income (L.L.):</label>
-        <input type="text" id="income" name="income"><br><br>
-        <label for="expenses">Expenses (USD):</label>
-        <input type="text" id="expenses" name="expenses"><br><br>
+        <h2>Income</h2>
+        <label for="agri_business_ll">Agri-Business (L.L.):</label>
+        <input type="text" id="agri_business_ll" name="agri_business_ll">
+        <label for="agri_business_usd">Agri-Business (USD):</label>
+        <input type="text" id="agri_business_usd" name="agri_business_usd"><br><br>
+
+        <label for="pet_food_ll">Pet Food Business (L.L.):</label>
+        <input type="text" id="pet_food_ll" name="pet_food_ll">
+        <label for="pet_food_usd">Pet Food Business (USD):</label>
+        <input type="text" id="pet_food_usd" name="pet_food_usd"><br><br>
+
+        <label for="offshore_consultancy_ll">Offshore Consultancy (L.L.):</label>
+        <input type="text" id="offshore_consultancy_ll" name="offshore_consultancy_ll">
+        <label for="offshore_consultancy_usd">Offshore Consultancy (USD):</label>
+        <input type="text" id="offshore_consultancy_usd" name="offshore_consultancy_usd"><br><br>
+
+        <h2>Expenses</h2>
+        <label for="secret_expenses_ll">Secret Expenses (L.L.):</label>
+        <input type="text" id="secret_expenses_ll" name="secret_expenses_ll">
+        <label for="secret_expenses_usd">Secret Expenses (USD):</label>
+        <input type="text" id="secret_expenses_usd" name="secret_expenses_usd"><br><br>
+
+        <label for="regular_expenses_ll">Regular Expenses (L.L.):</label>
+        <input type="text" id="regular_expenses_ll" name="regular_expenses_ll">
+        <label for="regular_expenses_usd">Regular Expenses (USD):</label>
+        <input type="text" id="regular_expenses_usd" name="regular_expenses_usd"><br><br>
+
+        <label for="cost_of_sales_ll">Cost of Sales Expenses (L.L.):</label>
+        <input type="text" id="cost_of_sales_ll" name="cost_of_sales_ll">
+        <label for="cost_of_sales_usd">Cost of Sales Expenses (USD):</label>
+        <input type="text" id="cost_of_sales_usd" name="cost_of_sales_usd"><br><br>
+
+        <label for="cost_of_living_ll">Cost of Living Expenses (L.L.):</label>
+        <input type="text" id="cost_of_living_ll" name="cost_of_living_ll">
+        <label for="cost_of_living_usd">Cost of Living Expenses (USD):</label>
+        <input type="text" id="cost_of_living_usd" name="cost_of_living_usd"><br><br>
+
         <input type="submit" value="Submit">
     </form>
     <br>
