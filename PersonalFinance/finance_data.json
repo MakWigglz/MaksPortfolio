@@ -1,0 +1,34 @@
+{
+  "income": {
+    "agri_business": {
+      "ll": "9000,000",
+      "usd": "100"
+    },
+    "pet_food": {
+      "ll": "32,000,000",
+      "usd": "400"
+    },
+    "offshore_consultancy": {
+      "ll": "90,000,000",
+      "usd": "1000"
+    }
+  },
+  "expenses": {
+    "secret": {
+      "ll": "32,000,000",
+      "usd": "400"
+    },
+    "regular": {
+      "ll": "900,000",
+      "usd": "100"
+    },
+    "cost_of_sales": {
+      "ll": "18,000,000",
+      "usd": "200"
+    },
+    "cost_of_living": {
+      "ll": "900,000",
+      "usd": "100"
+    }
+  }
+}
