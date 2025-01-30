@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Finance Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Personal Finance Application</h1>
+    <form action="{{ url_for('submit') }}" method="post">
+        <label for="income">Income (L.L.):</label>
+        <input type="text" id="income" name="income"><br><br>
+        <label for="expenses">Expenses (USD):</label>
+        <input type="text" id="expenses" name="expenses"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <h2>Finance Overview</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Amount (L.L.)</th>
+                <th>Amount (USD)</th>
+            </tr>
+        </thead>
+        <tbody id="finance-table-body">
+            {% for row in finance_data %}
+            <tr>
+                <td>{{ row.category }}</td>
+                <td>{{ row.amount_ll }}</td>
+                <td>{{ row.amount_usd }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
