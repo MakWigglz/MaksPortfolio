@@ -1,3 +1,3 @@
 import pandas as pd
-df = pd.read_csv("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/mpg.csv")
+df = pd.read_csv("MakWigglz/MaksPortfolio/CarsDataPython/dataset.csv")
 df.head()
