@@ -1,0 +1,24 @@
+(new-matplot-venv) amakki@As-MacBook-Pro pandas % python3
+Python 3.13.3 | packaged by conda-forge | (main, Apr 14 2025, 20:46:04) [Clang 18.1.8 ] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pandas as pd
+
+>>> 
+>>> df = pd.DataFrame(
+...     {
+...         "Name": [
+...             "Braund, Mr. Owen Harris",
+...             "Allen, Mr. William Henry",
+...             "Ahmad, Mr. Makki",
+...         ],
+...         "Age": [22, 35, 58],
+...         "Sex": ["male", "male", "male"],
+...     }
+... )
+>>> df
+                       Name  Age   Sex
+0   Braund, Mr. Owen Harris   22  male
+1  Allen, Mr. William Henry   35  male
+2          Ahmad, Mr. Makki   58  male
+>>> 
+
