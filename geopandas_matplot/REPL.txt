@@ -1,0 +1,47 @@
+>>> import geopandas
+>>> from geodatasets import get_path 
+>>> path_to_data = get_path("nybb")
+Downloading file 'nybb_16a.zip' from 'https://www.nyc.gov/assets/planning/download/zip/data-maps/open-data/nybb_16a.zip' to '/Users/amakki/Library/Caches/geodatasets'.
+Extracting 'nybb_16a/nybb.shp' from '/Users/amakki/Library/Caches/geodatasets/nybb_16a.zip' to '/Users/amakki/Library/Caches/geodatasets/nybb_16a.zip.unzip'
+Extracting 'nybb_16a/nybb.shx' from '/Users/amakki/Library/Caches/geodatasets/nybb_16a.zip' to '/Users/amakki/Library/Caches/geodatasets/nybb_16a.zip.unzip'
+Extracting 'nybb_16a/nybb.dbf' from '/Users/amakki/Library/Caches/geodatasets/nybb_16a.zip' to '/Users/amakki/Library/Caches/geodatasets/nybb_16a.zip.unzip'
+Extracting 'nybb_16a/nybb.prj' from '/Users/amakki/Library/Caches/geodatasets/nybb_16a.zip' to '/Users/amakki/Library/Caches/geodatasets/nybb_16a.zip.unzip'
+>>> gdf = geopandas.read_file(path_to_data)
+>>> gdf
+   BoroCode  ...                                           geometry
+0         5  ...  MULTIPOLYGON (((970217.022 145643.332, 970227....
+1         4  ...  MULTIPOLYGON (((1029606.077 156073.814, 102957...
+2         3  ...  MULTIPOLYGON (((1021176.479 151374.797, 102100...
+3         1  ...  MULTIPOLYGON (((981219.056 188655.316, 980940....
+4         2  ...  MULTIPOLYGON (((1012821.806 229228.265, 101278...
+
+[5 rows x 5 columns]
+>>> gdf = gdf.set_index("BoroName")
+>>> gdf["area"] = gdf.area
+>>> gdf["area"]
+BoroName
+Staten Island    1.623822e+09
+Queens           3.045214e+09
+Brooklyn         1.937478e+09
+Manhattan        6.364712e+08
+Bronx            1.186926e+09
+Name: area, dtype: float64
+>>> gdf["boundary"] = gdf.boundary
+>>> gdf["boundary"]
+BoroName
+Staten Island    MULTILINESTRING ((970217.022 145643.332, 97022...
+Queens           MULTILINESTRING ((1029606.077 156073.814, 1029...
+Brooklyn         MULTILINESTRING ((1021176.479 151374.797, 1021...
+Manhattan        MULTILINESTRING ((981219.056 188655.316, 98094...
+Bronx            MULTILINESTRING ((1012821.806 229228.265, 1012...
+Name: boundary, dtype: geometry
+>>> gdf["centroid"] = gdf.centroid
+>>> gdf["centroid"]
+BoroName
+Staten Island      POINT (941639.45 150931.991)
+Queens           POINT (1034578.078 197116.604)
+Brooklyn          POINT (998769.115 174169.761)
+Manhattan         POINT (993336.965 222451.437)
+Bronx              POINT (1021174.79 249937.98)
+Name: centroid, dtype: geometry
+>>> 
