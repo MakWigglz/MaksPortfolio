@@ -1,0 +1,86 @@
+(pypractice-conda-venv) amakki@As-MacBook-Pro gdp_matrix_calc % python3 gdp_matrix_calc.py
+--- GDP Summary (Values in Hypothetical Units) ---
+      Consumption (C)  Investment (I)  ...  Net Exports (X-M)   GDP
+Year                                   ...                         
+1990             2547             952  ...               -242  4317
+1991             2766             893  ...               -187  4528
+1992             2648             877  ...               -136  4453
+1993             2713             937  ...               -227  4478
+
+[4 rows x 7 columns]
+
+--- Detailed Consumption (C) Data ---
+                                                    1990  1991  1992  1993
+Durable Goods: New Vehicles                          167   199   152   181
+Durable Goods: Furniture & Appliances                121   101   109   115
+Durable Goods: Recreational Goods                     94    85    97    89
+Nondurable Goods: Food & Beverages (at home)         472   492   488   467
+Nondurable Goods: Clothing & Footwear                143   155   162   175
+Nondurable Goods: Gasoline & Energy                   73    96    99    83
+Services: Housing & Utilities                        516   557   514   500
+Services: Healthcare (incl. medical services & ...   311   357   369   306
+Services: Transportation (fares, car rentals)         92   128   125   128
+Services: Food Services & Accommodation              264   262   252   342
+Services: Recreation & Culture                       114   147   133   149
+Services: Financial & Insurance                       82    89    62    72
+Services: Education                                   98    98    86   106
+
+--- Detailed Investment (I) Data ---
+                                                    1990  1991  1992  1993
+Expat remitances: Social ROI                           8     8     8     8
+Nonresidential Structures: Commercial Buildings       75    60    52    72
+Nonresidential Structures: Industrial Buildings       41    65    50    65
+Nonresidential Structures: Other (e.g., oil & gas)    42    27    26    47
+Nonresidential Equipment: Industrial Machinery       134   130   126   100
+Nonresidential Equipment: Information Processin...   143   162   161   179
+Nonresidential Equipment: Transportation Equipment    61    63    63    72
+Intellectual Property Products: Software              48    30    51    43
+Intellectual Property Products: Research & Deve...    53    52    46    49
+Residential Investment: Single-Family Housing        184   181   189   166
+Residential Investment: Multi-Family Housing          79    57    67    68
+Residential Investment: Improvements                  52    42    30    44
+Change in Private Inventories: Manufacturing          23    13     5     8
+Change in Private Inventories: Wholesale/Retail...     9     3     3    16
+
+--- Detailed Government Spending (G) Data ---
+                                                  1990  1991  1992  1993
+Defense: Military Personnel Compensation           105   113   109   129
+Defense: Weapons & Equipment                       115    99    98   116
+Defense: Operations & Maintenance                   82    89    76    87
+Nondefense: Government Administration (Salaries)   172   154   177   123
+Nondefense: Healthcare Administration               47    41    55    66
+Nondefense: Education Spending (public schools)    197   187   187   184
+Nondefense: Public Safety (Police, Fire)           118   114   112   102
+Nondefense: Transportation Infrastructure           76    99    97    96
+Nondefense: Environmental Protection                33    22    37    39
+Nondefense: Scientific Research                     58    56    55    45
+Nondefense: Public Hospitals & Health Programs      57    82    61    68
+
+--- Detailed Exports (X) Data ---
+                                                   1990  1991  1992  1993
+Goods Exports: Agricultural Products                 53    77    76    51
+Goods Exports: Machinery & Equipment                118   126   116    93
+Goods Exports: Automotive Products                   82    99    85    77
+Goods Exports: Chemicals                             74    71    81    88
+Goods Exports: Electronics                           84    94    93    81
+Services Exports: Travel (Tourism)                   61    45    66    62
+Services Exports: Transportation                     42    31    49    42
+Services Exports: Financial Services                 32    25    24    36
+Services Exports: Intellectual Property Charges      29    18    19    15
+Services Exports: Computer & Information Services    32    38    44    27
+Services Exports: Other Business Services            41    39    56    48
+
+--- Detailed Imports (M) Data ---
+                                                    1990  1991  1992  1993
+Goods Imports: Crude Oil & Petroleum Products        101    88    86    90
+Goods Imports: Manufactured Consumer Goods           160   185   184   154
+Goods Imports: Industrial Supplies & Materials       114   102   108   111
+Goods Imports: Automotive Products                   126   123   105   116
+Goods Imports: Capital Goods (Machinery)              99    86    99   102
+Services Imports: Travel (Domestic residents ab...    78    61    72    73
+Services Imports: Transportation                      56    39    37    54
+Services Imports: Financial Services                  31    26    28    26
+Services Imports: Intellectual Property Charges       30    29    31    27
+Services Imports: Computer & Information Services     30    42    33    41
+Services Imports: Other Business Services             65    69    62    53
+(pypractice-conda-venv) amakki@As-MacBook-Pro gdp_matrix_calc % 
