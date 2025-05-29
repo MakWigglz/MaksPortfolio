@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 # Define the period of interest
-years = [1990, 1991, 1992, 1993]
+years = [1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000]
 num_years = len(years)
 
 # --- C: Consumption (Personal Consumption Expenditures) ---
@@ -45,6 +45,7 @@ C = np.array([
 # Represents spending by businesses on capital goods, residential construction, and changes in inventories.
 # 10+ common breakdowns:
 I_categories = [
+	"Expat remitances: Social ROI",
     "Nonresidential Structures: Commercial Buildings",
     "Nonresidential Structures: Industrial Buildings",
     "Nonresidential Structures: Other (e.g., oil & gas)",
@@ -60,6 +61,7 @@ I_categories = [
     "Change in Private Inventories: Wholesale/Retail Trade"
 ]
 I = np.array([
+	np.random.randint(8, 9, num_years),
     np.random.randint(50, 80, num_years),   # Commercial Buildings
     np.random.randint(40, 70, num_years),   # Industrial Buildings
     np.random.randint(20, 50, num_years),   # Other Nonresidential Structures
