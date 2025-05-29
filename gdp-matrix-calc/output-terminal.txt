@@ -1,0 +1,136 @@
+(pypractice-conda-venv) amakki@As-MacBook-Pro gdp_matrix_calc % python3 gdp_matrix_calc.py
+--- GDP Summary (Values in Hypothetical Units) ---
+      Consumption (C)  Investment (I)  ...  Net Exports (X-M)   GDP
+Year                                   ...                         
+1990             2726             891  ...               -252  4379
+1991             2664             946  ...               -211  4483
+1992             2689             943  ...               -219  4466
+1993             2766             920  ...               -209  4510
+1994             2774             952  ...               -232  4464
+1995             2629             916  ...               -160  4411
+1996             2618             965  ...               -174  4383
+1997             2600             856  ...               -254  4158
+1998             2647             910  ...               -174  4409
+1999             2741             934  ...               -301  4335
+2000             2711             899  ...               -213  4453
+
+[11 rows x 7 columns]
+
+--- Detailed Consumption (C) Data ---
+                                                    1990  1991  ...  1999  2000
+Durable Goods: New Vehicles                          183   150  ...   176   154
+Durable Goods: Furniture & Appliances                139   132  ...   124   105
+Durable Goods: Recreational Goods                    107   108  ...   109   115
+Nondurable Goods: Food & Beverages (at home)         470   475  ...   423   424
+Nondurable Goods: Clothing & Footwear                143   138  ...   147   179
+Nondurable Goods: Gasoline & Energy                   82    82  ...    95    93
+Services: Housing & Utilities                        576   580  ...   554   598
+Services: Healthcare (incl. medical services & ...   317   336  ...   391   320
+Services: Transportation (fares, car rentals)        115   101  ...   107   112
+Services: Food Services & Accommodation              282   291  ...   305   315
+Services: Recreation & Culture                       143   123  ...   141   103
+Services: Financial & Insurance                       65    68  ...    66    89
+Services: Education                                  104    80  ...   103   104
+
+[13 rows x 11 columns]
+
+--- Detailed Investment (I) Data ---
+                                                    1990  1991  ...  1999  2000
+Expat remitances: Social ROI                           8     8  ...     8     8
+Nonresidential Structures: Commercial Buildings       75    61  ...    73    62
+Nonresidential Structures: Industrial Buildings       40    65  ...    50    65
+Nonresidential Structures: Other (e.g., oil & gas)    24    40  ...    24    25
+Nonresidential Equipment: Industrial Machinery       130   143  ...   134   124
+Nonresidential Equipment: Information Processin...   173   167  ...   126   136
+Nonresidential Equipment: Transportation Equipment    69    79  ...    87    63
+Intellectual Property Products: Software              35    48  ...    51    51
+Intellectual Property Products: Research & Deve...    54    43  ...    45    55
+Residential Investment: Single-Family Housing        163   192  ...   186   168
+Residential Investment: Multi-Family Housing          58    60  ...    64    74
+Residential Investment: Improvements                  56    42  ...    50    48
+Change in Private Inventories: Manufacturing           8    -5  ...    28     4
+Change in Private Inventories: Wholesale/Retail...    -2     3  ...     8    16
+
+[14 rows x 11 columns]
+
+--- Detailed Government Spending (G) Data ---
+                                                  1990  1991  ...  1999  2000
+Defense: Military Personnel Compensation           130   140  ...   149   113
+Defense: Weapons & Equipment                       113   102  ...    95   104
+Defense: Operations & Maintenance                   82    72  ...    71   101
+Nondefense: Government Administration (Salaries)   120   129  ...   168   149
+Nondefense: Healthcare Administration               61    59  ...    46    48
+Nondefense: Education Spending (public schools)    179   198  ...   154   198
+Nondefense: Public Safety (Police, Fire)            90   123  ...   103   121
+Nondefense: Transportation Infrastructure           86    84  ...    65    76
+Nondefense: Environmental Protection                28    34  ...    20    28
+Nondefense: Scientific Research                     51    57  ...    30    35
+Nondefense: Public Hospitals & Health Programs      74    86  ...    60    83
+
+[11 rows x 11 columns]
+
+--- Detailed Exports (X) Data ---
+                                                   1990  1991  ...  1999  2000
+Goods Exports: Agricultural Products                 58    51  ...    77    57
+Goods Exports: Machinery & Equipment                 92   110  ...    91   122
+Goods Exports: Automotive Products                   70    80  ...    94    97
+Goods Exports: Chemicals                             78    89  ...    81    69
+Goods Exports: Electronics                           96    88  ...    99   113
+Services Exports: Travel (Tourism)                   47    42  ...    44    47
+Services Exports: Transportation                     48    30  ...    33    42
+Services Exports: Financial Services                 26    38  ...    26    25
+Services Exports: Intellectual Property Charges      28    27  ...    15    16
+Services Exports: Computer & Information Services    27    27  ...    44    40
+Services Exports: Other Business Services            54    50  ...    40    39
+
+[11 rows x 11 columns]
+
+--- Detailed Imports (M) Data ---
+                                                    1990  1991  ...  1999  2000
+Goods Imports: Crude Oil & Petroleum Products         82   107  ...   119    94
+Goods Imports: Manufactured Consumer Goods           199   155  ...   173   186
+Goods Imports: Industrial Supplies & Materials       130   115  ...   127   110
+Goods Imports: Automotive Products                   107    97  ...   122   121
+Goods Imports: Capital Goods (Machinery)             101   107  ...   109   101
+Services Imports: Travel (Domestic residents ab...    51    70  ...    76    61
+Services Imports: Transportation                      57    45  ...    50    52
+Services Imports: Financial Services                  28    31  ...    41    36
+Services Imports: Intellectual Property Charges       21    23  ...    31    33
+Services Imports: Computer & Information Services     47    42  ...    31    38
+Services Imports: Other Business Services             53    51  ...    66    48
+
+[11 rows x 11 columns]
+(pypractice-conda-venv) amakki@As-MacBook-Pro gdp_matrix_calc % python3 time_regression_analysis.py
+/Users/amakki/miniconda3/envs/pypractice-conda-venv/lib/python3.13/site-packages/scipy/stats/_axis_nan_policy.py:430: UserWarning: `kurtosistest` p-value may be inaccurate with fewer than 20 observations; only n=11 observations were given.
+  return hypotest_fun_in(*args, **kwds)
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    GDP   R-squared:                       1.000
+Model:                            OLS   Adj. R-squared:                  1.000
+Method:                 Least Squares   F-statistic:                 3.947e+25
+Date:                Fri, 30 May 2025   Prob (F-statistic):           2.20e-76
+Time:                        01:55:38   Log-Likelihood:                 251.50
+No. Observations:                  11   AIC:                            -493.0
+Df Residuals:                       6   BIC:                            -491.0
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+const                   -5.821e-11    1.6e-09     -0.036      0.972   -3.98e-09    3.87e-09
+Consumption (C)             1.0000   6.48e-13   1.54e+12      0.000       1.000       1.000
+Investment (I)              1.0000   4.24e-13   2.36e+12      0.000       1.000       1.000
+Government Spending (G)     1.0000   5.18e-13   1.93e+12      0.000       1.000       1.000
+Net Exports (NX)            1.0000   9.43e-14   1.06e+13      0.000       1.000       1.000
+==============================================================================
+Omnibus:                        2.330   Durbin-Watson:                   0.002
+Prob(Omnibus):                  0.312   Jarque-Bera (JB):                1.221
+Skew:                          -0.502   Prob(JB):                        0.543
+Kurtosis:                       1.714   Cond. No.                     3.95e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.95e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
